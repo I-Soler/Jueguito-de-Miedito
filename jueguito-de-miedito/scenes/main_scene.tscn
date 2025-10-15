@@ -1,8 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://fi64f3b4ocei"]
+[gd_scene load_steps=3 format=3 uid="uid://fi64f3b4ocei"]
+
+[ext_resource type="PackedScene" uid="uid://csha6wpihlgmf" path="res://assets/models/escenariodepruebav2.glb" id="1_w2twt"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_und3l"]
 
 [node name="Node3D" type="Node3D"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+visible = false
 mesh = SubResource("QuadMesh_und3l")
+
+[node name="escenariodepruebav2" parent="." instance=ExtResource("1_w2twt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.7880664, 0.7409992, 0.12250614)
+
+[editable path="escenariodepruebav2"]
